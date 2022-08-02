@@ -1,0 +1,15 @@
+basePath: /solar/sunpath-dsm-service
+info:
+  contact:
+    email: support@EagleView.com
+    name: EagleView Support
+    url: http://www.EagleView.com/support
+  description: Service for elevation data and coordinate tranformation.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://www.EagleView.com/terms/
+  title: SunPathMicroService/DSM API 1.0
+  version: "1.0"
+paths: {}
+swagger: "2.0"
