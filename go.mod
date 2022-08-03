@@ -1,9 +1,10 @@
-module example.com/mod
+module practice/mod
 
 go 1.17
 
 require (
 	github.com/labstack/echo/v4 v4.7.2
+	github.com/lib/pq v1.10.6
 	github.com/swaggo/echo-swagger v1.3.3
 	github.com/swaggo/swag v1.8.1
 )

@@ -1,4 +1,16 @@
-basePath: /solar/sunpath-dsm-service
+basePath: /test
+definitions:
+  model.EmpDetailsReq:
+    properties:
+      age:
+        type: integer
+      name:
+        type: string
+      profile_picture:
+        type: string
+      salary:
+        type: integer
+    type: object
 info:
   contact:
     email: support@EagleView.com
@@ -11,5 +23,174 @@ info:
   termsOfService: http://www.EagleView.com/terms/
   title: SunPathMicroService/DSM API 1.0
   version: "1.0"
-paths: {}
+paths:
+  /v1/employee/allEmployeeDetails:
+    get:
+      consumes:
+      - application/json
+      description: It will return all employee details
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: allEmployeeDetails
+      tags:
+      - employee
+  /v1/employee/create:
+    post:
+      consumes:
+      - application/json
+      description: It will create new employee details.
+      parameters:
+      - description: new employee details
+        in: body
+        name: args
+        required: true
+        schema:
+          $ref: '#/definitions/model.EmpDetailsReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request.
+          schema:
+            type: string
+        "404":
+          description: No data found
+          schema:
+            type: string
+        "500":
+          description: An error ocurred while getting emp details
+          schema:
+            type: string
+      summary: create
+      tags:
+      - employee
+  /v1/employee/deleteDetails/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: It will delete employee details for a particular id
+      parameters:
+      - description: id corresponding to which you need to delete emp details
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request.
+          schema:
+            type: string
+        "404":
+          description: No data found
+          schema:
+            type: string
+        "500":
+          description: An error ocurred while getting emp details
+          schema:
+            type: string
+      summary: deleteDetails
+      tags:
+      - employee
+  /v1/employee/employeeDetails/{id}:
+    get:
+      consumes:
+      - application/json
+      description: It will return employee details for a particular id
+      parameters:
+      - description: id corresponding to which you need emp details
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request.
+          schema:
+            type: string
+        "404":
+          description: No data found
+          schema:
+            type: string
+        "500":
+          description: An error ocurred while getting emp details
+          schema:
+            type: string
+      summary: employeeDetails
+      tags:
+      - employee
+  /v1/employee/update/{id}:
+    put:
+      consumes:
+      - application/json
+      description: It will update employee details for a particular id
+      parameters:
+      - description: id corresponding to which you need to update emp details
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: employee details to be updated
+        in: body
+        name: args
+        required: true
+        schema:
+          $ref: '#/definitions/model.EmpDetailsReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request.
+          schema:
+            type: string
+        "404":
+          description: No data found
+          schema:
+            type: string
+        "500":
+          description: An error ocurred while getting emp details
+          schema:
+            type: string
+      summary: updateDetails
+      tags:
+      - employee
+  /v1/practice/printName:
+    get:
+      consumes:
+      - application/json
+      description: It will print Name
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: printName
+      tags:
+      - Practice
 swagger: "2.0"
