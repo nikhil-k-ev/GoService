@@ -1,17 +1,11 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Service for elevation data and coordinate tranformation.",
-        "title": "SunPathMicroService/DSM API 1.0",
-        "termsOfService": "http://www.EagleView.com/terms/",
+        "description": "Service to practice making of new API",
+        "title": "Practice Service",
         "contact": {
-            "name": "EagleView Support",
-            "url": "http://www.EagleView.com/support",
-            "email": "support@EagleView.com"
-        },
-        "license": {
-            "name": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+            "name": "Nikhil Kumar",
+            "email": "nikhil.k@eagleview.com"
         },
         "version": "1.0"
     },

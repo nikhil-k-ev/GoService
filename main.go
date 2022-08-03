@@ -12,17 +12,13 @@ import (
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
 
-// @title SunPathMicroService/DSM API 1.0
+// @title Practice Service
 // @version 1.0
-// @description Service for elevation data and coordinate tranformation.
-// @termsOfService http://www.EagleView.com/terms/
+// @description Service to practice making of new API
 
-// @contact.name EagleView Support
-// @contact.url http://www.EagleView.com/support
-// @contact.email support@EagleView.com
+// @contact.name Nikhil Kumar
 
-// @license.name Apache 2.0
-// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+// @contact.email nikhil.k@eagleview.com
 
 // @BasePath /test
 

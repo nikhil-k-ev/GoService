@@ -17,15 +17,9 @@ var doc = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "http://www.EagleView.com/terms/",
         "contact": {
-            "name": "EagleView Support",
-            "url": "http://www.EagleView.com/support",
-            "email": "support@EagleView.com"
-        },
-        "license": {
-            "name": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+            "name": "Nikhil Kumar",
+            "email": "nikhil.k@eagleview.com"
         },
         "version": "{{.Version}}"
     },
@@ -326,8 +320,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "/test",
 	Schemes:     []string{},
-	Title:       "SunPathMicroService/DSM API 1.0",
-	Description: "Service for elevation data and coordinate tranformation.",
+	Title:       "Practice Service",
+	Description: "Service to practice making of new API",
 }
 
 type s struct{}

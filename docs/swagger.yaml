@@ -13,15 +13,10 @@ definitions:
     type: object
 info:
   contact:
-    email: support@EagleView.com
-    name: EagleView Support
-    url: http://www.EagleView.com/support
-  description: Service for elevation data and coordinate tranformation.
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: http://www.EagleView.com/terms/
-  title: SunPathMicroService/DSM API 1.0
+    email: nikhil.k@eagleview.com
+    name: Nikhil Kumar
+  description: Service to practice making of new API
+  title: Practice Service
   version: "1.0"
 paths:
   /v1/employee/allEmployeeDetails:
